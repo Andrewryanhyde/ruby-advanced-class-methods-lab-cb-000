@@ -42,11 +42,11 @@ class Song
 
   def self.alphabetical
     newArray = []
-    @@all.each do |name| 
+    @@all.each do |name|
       name << newArray
     end
     return newArray.sort
   end
-      
+
 
 end
