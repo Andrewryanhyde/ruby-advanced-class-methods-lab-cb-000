@@ -41,11 +41,8 @@ class Song
   end
 
   def self.alphabetical
-    newArray = []
-    @@all.each do |name|
-      name << newArray
-    end
-    return newArray.sort
+    newArray = self.all.sort_by {|song| song.name}
+    newArray
   end
 
 
